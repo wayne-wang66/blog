@@ -1,1 +1,0 @@
-import{_ as o,r as t,o as r,c as _,e as c,a as e,d as n}from"./app.bb56402a.js";const s={},d=e("h3",{id:"demo",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#demo","aria-hidden":"true"},"#"),n(" Demo")],-1);function l(i,m){const a=t("Flip");return r(),_("div",null,[d,c(a)])}var f=o(s,[["render",l],["__file","\u6D45\u8C08 FLIP \u52A8\u753B.html.vue"]]);export{f as default};
