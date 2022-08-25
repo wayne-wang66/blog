@@ -11,7 +11,8 @@ const base = process.env.BASE ? `/${process.env.BASE}/` : '/'
 
 export default defineUserConfig({
   // dest: 'build',
-  base: base as `/${string}/`,
+  // base: base as `/${string}/`,
+  base: '/blog/',
   head: [
     [
       'link',
