@@ -21,6 +21,8 @@ jobs:
 
       # 生成静态文件
       - name: Build
+        env:
+          BASE: 'blog'
         run: npm install && npm run build
 
       # 部署到 GitHub Pages
