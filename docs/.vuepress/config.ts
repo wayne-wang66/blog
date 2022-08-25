@@ -10,9 +10,10 @@ const isProd = process.env.NODE_ENV === 'production'
 const base = process.env.BASE ? `/${process.env.BASE}/` : '/'
 
 export default defineUserConfig({
-  // dest: 'build',
+  dest: 'build',
   // base: base as `/${string}/`,
   base: '/blog/',
+  // base: '/',
   head: [
     [
       'link',
