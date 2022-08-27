@@ -28,75 +28,36 @@ export default defineUserConfig({
       'meta',
       {
         name: 'author',
-        content: 'xuyixiang',
+        content: 'wayne',
       },
     ],
-    [
-      'meta',
-      {
-        name: 'keywords',
-        content:
-          "xuyixiang,xuyixiang's blog,xuyixiang blog,xuyixiang 的博客,许逸翔的博客,许逸翔的blog,许逸翔's blog",
-      },
-    ],
-    [
-      'meta',
-      {
-        name: 'description',
-        content:
-          "xuyixiang's blog,xuyixiang blog, xuyixiang 的博客,许逸翔的博客,许逸翔的blog,许逸翔's blog",
-      },
-    ],
-    [
-      'meta',
-      {
-        name: 'baidu-site-verification',
-        content: 'code-b3AXWsolty',
-      },
-    ],
-    [
-      'meta',
-      {
-        name: 'google-site-verification',
-        content: 'aV2Di5uN-VKtK_bGNYGHx---yYqZRds6mSCvEZcFURU',
-      },
-    ],
-    [
-      'meta',
-      { name: 'apple-mobile-web-app-title', content: "xuyixiang's blog" },
-    ],
-    [
-      'meta',
-      { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },
-    ],
-    ['meta', { name: 'theme-color', content: '#377bb5' }],
-    ['meta', { name: 'msapplication-TileColor', content: '#377bb5' }],
+    
   ],
 
   // site-level locales config
   locales: {
     '/': {
       lang: 'en-US',
-      title: 'xuyixiang',
-      description: "xuyixiang's blog,许逸翔的博客",
+      title: 'wayne',
+      description: "wayne's blog",
     },
   },
 
   bundler: viteBundler(),
 
   theme: gungnirTheme({
-    repo: 'xu1xiang/blog',
+    repo: 'wayne/blog',
     docsDir: 'docs',
     hitokoto: 'https://v1.hitokoto.cn?c=i', // enable hitokoto (一言) or not?
 
     // personal information
     personalInfo: {
-      name: 'xuyixiang',
-      avatar: '/img/avatar.svg',
+      name: 'wayne',
+      avatar: '/img/avatar.jpg',
       description: '🤧🥭',
       sns: {
-        github: 'xu1xiang',
-        email: 'xuyixiang18@gmail.com',
+        github: 'wayne',
+        email: '15295502569@163.com',
       },
     },
 
@@ -173,7 +134,7 @@ export default defineUserConfig({
       mermaid: true,
       chartjs: true,
       giscus: {
-        repo: 'xu1xiang/blog',
+        repo: 'wayne/blog',
         repoId: 'MDEwOlJlcG9zaXRvcnkzOTc0ODYzMzk=',
         category: 'General',
         categoryId: 'DIC_kwDOF7EpA84COi_d',
@@ -189,7 +150,7 @@ export default defineUserConfig({
     },
 
     footer: `
-      &copy; <a href="https://github.com/xu1xiang" target="_blank">xuyixiang</a> 2019-present
+      &copy; <a href="https://github.com/wangshufen66" target="_blank">wayne</a> 2019-present
       <br>
       Powered by <a href="https://v2.vuepress.vuejs.org" target="_blank">VuePress</a> &
       <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
@@ -198,7 +159,7 @@ export default defineUserConfig({
 
   plugins: [
     sitemapPlugin({
-      hostname: 'https://www.xuyx.site',
+      hostname: 'https://www.waynestrive.top',
     }),
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, 'components'),
