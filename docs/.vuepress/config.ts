@@ -6,6 +6,7 @@ import { gungnirTheme, i18n } from 'vuepress-theme-gungnir'
 import { navbar, sidebar } from './configs'
 import { registerComponentsPlugin } from './plugins/register-components'
 
+
 const isProd = process.env.NODE_ENV === 'production'
 const base = process.env.BASE ? `/${process.env.BASE}/` : '/'
 
@@ -31,7 +32,7 @@ export default defineUserConfig({
         content: 'wayne',
       },
     ],
-    
+
   ],
 
   // site-level locales config
@@ -138,7 +139,7 @@ export default defineUserConfig({
         repoId: 'MDEwOlJlcG9zaXRvcnkzOTc0ODYzMzk=',
         category: 'General',
         categoryId: 'DIC_kwDOF7EpA84COi_d',
-        lazyLoad: true,
+        lazyLoad: false,
       },
       mdPlus: {
         all: true,
@@ -146,7 +147,19 @@ export default defineUserConfig({
       // ga: 'G-ZLWJGDQC5S',
       ba: 'f645355c45295e011faa1a65c2c0b86c',
       pwa: false,
-      // search: false, // use @vuepress/plugin-docsearch instead
+      search: {
+        locales: {
+          "/": {
+            placeholder: "Search"
+          },
+          "/zh/": {
+            placeholder: "搜索"
+          }
+        }
+        // maxSuggestions: 10,
+        // isSearchable: () => true,
+        // getExtraFields: () => []
+      }, // use @vuepress/plugin-docsearch instead
     },
 
     footer: `
@@ -164,6 +177,7 @@ export default defineUserConfig({
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, 'components'),
     }),
+    
   ],
 
   markdown: {
